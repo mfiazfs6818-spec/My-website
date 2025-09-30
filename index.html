@@ -3,58 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Contact Form</title>
+  <title>My Business</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <h1><i class="fa-solid fa-envelope"></i> Contact Us</h1>
-    <p class="subtitle">Reach out to our business team</p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Business</h1>
+      <p>Your trusted partner for professional solutions</p>
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
+  </header>
 
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We are a professional business providing top-notch services for our clients. Our mission is to deliver quality solutions with integrity and efficiency.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Consulting</h3>
+        <p>Expert advice to help your business grow efficiently.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Development</h3>
+        <p>Custom software and web solutions tailored to your needs.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-bullhorn"></i>
+        <h3>Marketing</h3>
+        <p>Creative strategies to promote your business effectively.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
     <form action="https://formspree.io/f/xnngdgzq" method="POST">
-      
       <div class="input-group">
         <i class="fa-solid fa-user"></i>
-        <input type="text" name="name" id="name" required>
-        <label for="name">Your Name</label>
+        <input type="text" name="name" required>
+        <label>Your Name</label>
       </div>
-
-      <div class="input-group">
-        <i class="fa-solid fa-building"></i>
-        <input type="text" name="company" id="company" required>
-        <label for="company">Company Name</label>
-      </div>
-
-      <div class="input-group">
-        <i class="fa-solid fa-phone"></i>
-        <input type="tel" name="phone" id="phone" required>
-        <label for="phone">Phone Number</label>
-      </div>
-
       <div class="input-group">
         <i class="fa-solid fa-envelope"></i>
-        <input type="email" name="email" id="email" required>
-        <label for="email">Your Email</label>
+        <input type="email" name="email" required>
+        <label>Your Email</label>
       </div>
-
-      <div class="input-group">
-        <i class="fa-solid fa-tag"></i>
-        <input type="text" name="subject" id="subject" required>
-        <label for="subject">Subject</label>
-      </div>
-
       <div class="input-group">
         <i class="fa-solid fa-message"></i>
-        <textarea name="message" id="message" rows="5" required></textarea>
-        <label for="message">Message</label>
+        <textarea name="message" rows="5" required></textarea>
+        <label>Your Message</label>
       </div>
-
-      <button type="submit">
-        <i class="fa-solid fa-paper-plane"></i> <span>Send Message</span>
-      </button>
+      <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
     </form>
-  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Business. All rights reserved.</p>
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
