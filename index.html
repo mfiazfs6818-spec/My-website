@@ -3,79 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Business</title>
+  <title>My Pro Website</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Welcome to My Business</h1>
-      <p>Your trusted partner for professional solutions</p>
-      <a href="#contact" class="btn">Contact Us</a>
-    </div>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">My Website</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Hi, I'm [Your Name]</h2>
+    <p>Web Developer & Designer. Creating modern websites with GitHub Pages.</p>
+    <button onclick="alert('Thanks for visiting!')">Learn More</button>
+  </section>
+
   <!-- About Section -->
-  <section class="about" id="about">
-    <h2>About Us</h2>
-    <p>We are a professional business providing top-notch services for our clients. Our mission is to deliver quality solutions with integrity and efficiency.</p>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate web developer focused on creating responsive, clean, and modern websites.  
+      This site demonstrates my skills and practice projects hosted on GitHub Pages.
+    </p>
   </section>
 
   <!-- Services Section -->
-  <section class="services" id="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <div class="service-box">
       <div class="card">
-        <i class="fa-solid fa-chart-line"></i>
-        <h3>Consulting</h3>
-        <p>Expert advice to help your business grow efficiently.</p>
+        <h3>Web Design</h3>
+        <p>Modern UI/UX designs for personal and business websites.</p>
       </div>
       <div class="card">
-        <i class="fa-solid fa-code"></i>
-        <h3>Development</h3>
-        <p>Custom software and web solutions tailored to your needs.</p>
+        <h3>Web Development</h3>
+        <p>Responsive and functional websites with HTML, CSS, JS.</p>
       </div>
       <div class="card">
-        <i class="fa-solid fa-bullhorn"></i>
-        <h3>Marketing</h3>
-        <p>Creative strategies to promote your business effectively.</p>
+        <h3>Hosting</h3>
+        <p>Fast & free hosting using GitHub Pages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-box">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A sample project showcasing skills.</p>
+        <a href="#">View</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Another project example.</p>
+        <a href="#">View</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>More work examples.</p>
+        <a href="#">View</a>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/xnngdgzq" method="POST">
-      <div class="input-group">
-        <i class="fa-solid fa-user"></i>
-        <input type="text" name="name" required>
-        <label>Your Name</label>
-      </div>
-      <div class="input-group">
-        <i class="fa-solid fa-envelope"></i>
-        <input type="email" name="email" required>
-        <label>Your Email</label>
-      </div>
-      <div class="input-group">
-        <i class="fa-solid fa-message"></i>
-        <textarea name="message" rows="5" required></textarea>
-        <label>Your Message</label>
-      </div>
-      <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/your_form_id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 My Business. All rights reserved.</p>
-    <div class="social">
-      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-    </div>
+    <p>© 2025 My Pro Website | All rights reserved</p>
   </footer>
 
   <script src="js/script.js"></script>
