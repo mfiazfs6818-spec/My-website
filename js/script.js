@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
 
   form.addEventListener("submit", async function (event) {
-    event.preventDefault(); // page reload ko rokta hai
+    event.preventDefault();
     const formData = new FormData(form);
 
     try {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (response.ok) {
         alert("✅ Thank you! Your message has been sent successfully.");
-        form.reset(); // form fields clear ho jayenge
+        form.reset();
       } else {
         alert("❌ Oops! Something went wrong, please try again.");
       }

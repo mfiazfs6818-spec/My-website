@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+  <title>Business Contact Form</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <h1><i class="fa-solid fa-envelope"></i> Get in Touch</h1>
-    <p class="subtitle">We'd love to hear from you!</p>
+    <h1><i class="fa-solid fa-envelope"></i> Contact Us</h1>
+    <p class="subtitle">Reach out to our business team</p>
+
     <form action="https://formspree.io/f/xnngdgzq" method="POST">
       
       <div class="input-group">
@@ -21,15 +21,33 @@
       </div>
 
       <div class="input-group">
+        <i class="fa-solid fa-building"></i>
+        <input type="text" name="company" id="company" required>
+        <label for="company">Company Name</label>
+      </div>
+
+      <div class="input-group">
+        <i class="fa-solid fa-phone"></i>
+        <input type="tel" name="phone" id="phone" required>
+        <label for="phone">Phone Number</label>
+      </div>
+
+      <div class="input-group">
         <i class="fa-solid fa-envelope"></i>
         <input type="email" name="email" id="email" required>
         <label for="email">Your Email</label>
       </div>
 
       <div class="input-group">
+        <i class="fa-solid fa-tag"></i>
+        <input type="text" name="subject" id="subject" required>
+        <label for="subject">Subject</label>
+      </div>
+
+      <div class="input-group">
         <i class="fa-solid fa-message"></i>
         <textarea name="message" id="message" rows="5" required></textarea>
-        <label for="message">Your Message</label>
+        <label for="message">Message</label>
       </div>
 
       <button type="submit">
