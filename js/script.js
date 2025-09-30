@@ -1,3 +1,1 @@
-function showMessage() {
-  alert("Hello! Your website is working 🎉");
-}
+console.log("Site is working!");
