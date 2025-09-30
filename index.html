@@ -3,73 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>Contact Us</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <h1 class="logo">My Website</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h2>Welcome to My Website 🚀</h2>
-    <p>This site is hosted with <strong>GitHub Pages</strong>.</p>
-    <button id="learnBtn">Learn More</button>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      We are passionate about building simple, modern, and responsive websites.  
-      This is a demo site created using <strong>HTML, CSS, JS</strong> and hosted with GitHub Pages.
-    </p>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-box">
-      <div class="card">
-        <h3>Web Design</h3>
-        <p>Clean and modern UI designs for your business.</p>
+  <div class="container">
+    <h1><i class="fa-solid fa-envelope"></i> Get in Touch</h1>
+    <p class="subtitle">We'd love to hear from you!</p>
+    <form action="https://formspree.io/f/xnngdgzq" method="POST">
+      
+      <div class="input-group">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" name="name" id="name" required>
+        <label for="name">Your Name</label>
       </div>
-      <div class="card">
-        <h3>Development</h3>
-        <p>Responsive and functional websites built with love.</p>
-      </div>
-      <div class="card">
-        <h3>Hosting</h3>
-        <p>Fast and secure hosting solutions powered by GitHub Pages.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+      <div class="input-group">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" name="email" id="email" required>
+        <label for="email">Your Email</label>
+      </div>
+
+      <div class="input-group">
+        <i class="fa-solid fa-message"></i>
+        <textarea name="message" id="message" rows="5" required></textarea>
+        <label for="message">Your Message</label>
+      </div>
+
+      <button type="submit">
+        <i class="fa-solid fa-paper-plane"></i> <span>Send Message</span>
+      </button>
     </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 My Website | All Rights Reserved</p>
-  </footer>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
